@@ -1,0 +1,55 @@
+{
+    "pages": [{
+        "path": "demonHome/index",
+        "style": {
+            "navigationBarTitleText": "知妖"
+        }
+    }, {
+        "path": "demonThin/index",
+        "style": {
+            "navigationBarTitleText": "妖薄"
+        }
+    }, {
+        "path": "demonSearch/index",
+        "style": {
+            "navigationBarTitleText": "搜妖"
+        }
+    }, {
+        "path": "demonLogins/index",
+        "style": {
+            "navigationBarTitleText": "登录"
+        }
+    }],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#8a8a8a",
+        "backgroundColor": "#eeeeee",
+        "borderStyle": "white",
+        "list": [{
+            "pagePath": "demonHome/index",
+            "text": "首页",
+            "iconPath": "static/tabbarImages/home.png",
+            "selectedIconPath": "static/tabbarImages/selectedhome.png"
+        }, {
+            "pagePath": "demonThin/index",
+            "text": "妖薄",
+            "iconPath": "static/tabbarImages/thin.png",
+            "selectedIconPath": "static/tabbarImages/selectedthin.png"
+        }, {
+            "pagePath": "demonSearch/index",
+            "text": "搜妖",
+            "iconPath": "static/tabbarImages/search.png",
+            "selectedIconPath": "static/tabbarImages/selectedsearch.png"
+        }, {
+            "pagePath": "demonLogins/index",
+            "text": "搜妖",
+            "iconPath": "static/tabbarImages/login.png",
+            "selectedIconPath": "static/tabbarImages/selectedlogin.png"
+        }]
+    }
+}
