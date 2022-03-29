@@ -1,0 +1,14 @@
+.Carousel-box {
+    text-align: center;
+    position: relative;
+    margin-top: 20rpx;
+    .swiper {
+        height: 200rpx;
+        width: 100%;
+        img {
+            height: 200rpx;
+            width: 90%;
+            color: rgba(143, 134, 86, 0.5);
+        }
+    }
+}
