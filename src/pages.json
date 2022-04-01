@@ -19,6 +19,11 @@
         "style": {
             "navigationBarTitleText": "登录"
         }
+    }, {
+        "path": "demonHome/components/CarouselDetails/index",
+        "style": {
+            "navigationBarTitleText": "知妖广告"
+        }
     }],
     "globalStyle": {
         "navigationBarTextStyle": "black",

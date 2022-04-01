@@ -1,6 +1,7 @@
 <template>
   <view class="todayBox">
       <text>{{title}}</text>
+      <view></view>
   </view>
 </template>
 

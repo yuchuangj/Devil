@@ -9,8 +9,9 @@
       indicator-dots="true"
       indicator-active-color="rgba(143, 134, 86, 0.5)"
     >
-      <swiper-item><img src="../Carousel/images/1.jpg" /></swiper-item>
-      <swiper-item><img src="../Carousel/images/2.jpg" /></swiper-item>
+      <swiper-item v-for="item in SwiperInfo" :key="item.id">
+        <img :src="item.image" @click="jumpCarouselText(item.id)" />
+      </swiper-item>
     </swiper>
   </view>
 </template>
@@ -20,21 +21,23 @@ import { Component, Vue } from "vue-property-decorator";
   components: {},
 })
 export default class MonsterCaursel extends Vue {
-  public CarouselImg() {
-    uni.request({
-      url: "http://localhost:81/MonsterCarouselinfo/Carousel.php",
-      method: "GET",
-      dataType: "json",
-      success: (res) => {
-        console.log(res);
-      },
-      fail: (res) => {
-        console.error(res);
-      },
+  public SwiperInfo = [];
+  //请求图片数据
+  async getSwiper() {
+    const res = await this.$myRequest({
+      url: "/MonsterCarouselinfo/Carousel.php",
+    });
+    this.SwiperInfo = res.data;
+    console.log(JSON.parse(JSON.stringify(this.SwiperInfo)));
+  }
+  //跳转页面
+  public jumpCarouselText(id: any) {
+    uni.navigateTo({
+      url: "components/CarouselDetails/index?id=" + id,
     });
   }
-  onLoad() {
-    this.CarouselImg();
+  mounted() {
+    this.getSwiper();
   }
 }
 </script>

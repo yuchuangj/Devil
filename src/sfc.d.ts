@@ -4,6 +4,7 @@ declare module "*.vue" {
     declare module "vue/types/vue"{
         interface Vue{
             $store:any
+            $myRequest:any
         }
     }
     //导出export default Vue模块
