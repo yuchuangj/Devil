@@ -1,0 +1,50 @@
+// 页面颜色
+page {
+    background-color: rgb(231, 229, 229);
+}
+
+.login-box {
+    width: 100%;
+    text-align: center;
+    margin-top: 120rpx;
+    .avatar {
+        width: 230rpx;
+        height: 230rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 auto;
+        img {
+            width: 160rpx;
+            height: 160rpx;
+        }
+    }
+    .username {
+        margin-top: 30rpx;
+        text {
+            font-size: 43rpx;
+        }
+    }
+    .logout {
+        display: block;
+        margin-top: 300rpx;
+        font-size: 31rpx;
+    }
+    .title {
+        display: block;
+        margin-top: 15rpx;
+        font-size: 32rpx;
+        opacity: 0.5;
+    }
+    .protocol {
+        margin-top: 10rpx;
+        text {
+            font-size: 31rpx;
+            opacity: 0.5;
+            margin-left: 30rpx;
+            margin-right: 30rpx;
+        }
+    }
+}

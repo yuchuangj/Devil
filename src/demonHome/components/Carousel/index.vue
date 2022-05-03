@@ -1,6 +1,7 @@
+<!--首页轮播图 -->
 <template>
   <view class="Carousel-box">
-    <!--Swiper轮播-->
+    <!-- Swiper轮播 -->
     <swiper
       class="swiper"
       circular="true"
@@ -22,20 +23,23 @@ import { Component, Vue } from "vue-property-decorator";
 })
 export default class MonsterCaursel extends Vue {
   public SwiperInfo = [];
-  //请求图片数据
+  // 请求图片数据
   async getSwiper() {
-    const res = await this.$myRequest({
+    const res:any = await this.$myRequest({
       url: "/MonsterCarouselinfo/Carousel.php",
+      method:"GET"
     });
     this.SwiperInfo = res.data;
-    console.log(JSON.parse(JSON.stringify(this.SwiperInfo)));
+    console.log(this.SwiperInfo);
   }
-  //跳转页面
-  public jumpCarouselText(id: any) {
+
+  // 跳转页面
+  public jumpCarouselText(id: number) {
     uni.navigateTo({
       url: "components/CarouselDetails/index?id=" + id,
     });
   }
+
   mounted() {
     this.getSwiper();
   }

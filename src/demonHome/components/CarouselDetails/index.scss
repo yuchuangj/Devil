@@ -19,17 +19,13 @@
     .Carousel-subtitle {
         height: 120rpx;
         line-height: 165rpx;
-        margin-left: -10rpx;
         text {
             display: flex;
             justify-content: center;
         }
     }
-    //内容字体样式
+    // 内容字体样式
     .Carousel-Content-box,
-    .Carousel-Content-box2,
-    .Carousel-Content-box3,
-    .Carousel-Content-box4,
     .Carouseltime {
         width: 90%;
         margin: 0 auto;
@@ -44,11 +40,12 @@
             font-weight: bold;
         }
     }
+    // 格式化时间样式 
     .Carouseltime {
         height: 100rpx;
         text {
-            color: rgb(120, 119, 119);
-            opacity: 0.7;
+            color: rgb(0, 0, 0);
+            opacity: 0.4;
         }
     }
 }

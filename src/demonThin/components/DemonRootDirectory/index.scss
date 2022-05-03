@@ -1,0 +1,35 @@
+.root-directory-box {
+    width: 90%;
+    height: 300rpx;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10rpx;
+    margin-top: 30rpx;
+    position: relative;
+    top: -15rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .root-directory-text {
+        float: left;
+        padding-left: 30rpx;
+        margin-top: 6rpx;
+        text:first-child {
+            font-weight: 400;
+            font-size: 45rpx;
+        }
+        text:last-child {
+            display: inline-block;
+            margin-top: 15rpx;
+            opacity: 0.8;
+            font-size: 30rpx;
+        }
+    }
+    .root-directory-img {
+        padding-right: 30rpx;
+        img {
+            width: 220rpx;
+            height: 180rpx;
+        }
+    }
+}

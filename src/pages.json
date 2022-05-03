@@ -1,30 +1,69 @@
 {
     "pages": [{
-        "path": "demonHome/index",
-        "style": {
-            "navigationBarTitleText": "知妖"
+            "path": "demonHome/index",
+            "style": {
+                "navigationBarTitleText": "知妖",
+                "enablePullDownRefresh": true,
+                "onReachBottonDistance": 100
+            }
+        }, {
+            "path": "demonThin/index",
+            "style": {
+                "navigationBarTitleText": "妖薄"
+            }
+        }, {
+            "path": "demonSearch/index",
+            "style": {
+                "navigationBarTitleText": "搜妖"
+            }
+        }, {
+            "path": "demonLogins/index",
+            "style": {
+                "navigationBarTitleText": "登录"
+            }
+        }, {
+            "path": "demonHome/components/CarouselDetails/index",
+            "style": {
+                "navigationBarTitleText": "知妖广告"
+            }
+        }, {
+            "path": "demonHome/components/CalendarInfoDetails/index",
+            "style": {
+                "navigationBarTitleText": "纪妖"
+            }
+        }, {
+            "path": "demonThin/components/RootDirectoryContentOne/index",
+            "style": {
+                "navigationBarTitleText": "妖薄"
+            }
+        }, {
+            "path": "demonThin/components/RootDirectoryContentTwo/index",
+            "style": {
+                "navigationBarTitleText": "妖薄"
+            }
+        },
+        {
+            "path": "demonThin/components/RootDirectoryContentThree/index",
+            "style": {
+                "navigationBarTitleText": "妖薄"
+            }
+        }, {
+            "path": "demonThin/components/RootDirectoryDetails/index",
+            "style": {
+                "navigationBarTitleText": "妖薄"
+            }
+        }, {
+            "path": "demonSearch/components/search/index",
+            "style": {
+                "navigationBarTitleText": "搜索"
+            }
+        }, {
+            "path": "demonSearch/components/QueryResultDetails/index",
+            "style": {
+                "navigationBarTitleText": "搜妖"
+            }
         }
-    }, {
-        "path": "demonThin/index",
-        "style": {
-            "navigationBarTitleText": "妖薄"
-        }
-    }, {
-        "path": "demonSearch/index",
-        "style": {
-            "navigationBarTitleText": "搜妖"
-        }
-    }, {
-        "path": "demonLogins/index",
-        "style": {
-            "navigationBarTitleText": "登录"
-        }
-    }, {
-        "path": "demonHome/components/CarouselDetails/index",
-        "style": {
-            "navigationBarTitleText": "知妖广告"
-        }
-    }],
+    ],
     "globalStyle": {
         "navigationBarTextStyle": "black",
         "navigationBarBackgroundColor": "#F8F8F8",
@@ -52,7 +91,7 @@
             "selectedIconPath": "static/tabbarImages/selectedsearch.png"
         }, {
             "pagePath": "demonLogins/index",
-            "text": "搜妖",
+            "text": "登录",
             "iconPath": "static/tabbarImages/login.png",
             "selectedIconPath": "static/tabbarImages/selectedlogin.png"
         }]

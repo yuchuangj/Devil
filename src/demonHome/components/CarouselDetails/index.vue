@@ -1,3 +1,4 @@
+<!-- 轮播内容详情页 -->
 <template>
   <view class="carousel-details-info">
     <view class="Carousel-title">
@@ -13,17 +14,29 @@
       <text>{{ datainfo[id].BoldParagraph }}</text>
       <text>{{ datainfo[id].CarouselContent }}</text>
     </view>
-    <view class="Carousel-Content-box2">
+    <view class="Carousel-Content-box">
       <text>{{ datainfo[id].BoldParagraph2 }}</text>
       <text>{{ datainfo[id].CarouselContent2 }}</text>
     </view>
-    <view class="Carousel-Content-box3">
+    <view class="Carousel-Content-box">
       <text>{{ datainfo[id].BoldParagraph3 }}</text>
       <text>{{ datainfo[id].CarouselContent3 }}</text>
     </view>
-    <view class="Carousel-Content-box4">
+    <view class="Carousel-Content-box">
       <text>{{ datainfo[id].BoldParagraph4 }}</text>
       <text>{{ datainfo[id].CarouselContent4 }}</text>
+    </view>
+    <view class="Carousel-Content-box">
+      <text>{{ datainfo[id].BoldParagraph3 }}</text>
+      <text>{{ datainfo[id].CarouselContent3 }}</text>
+    </view>
+    <view class="Carousel-Content-box">
+      <text>{{ datainfo[id].BoldParagraph5 }}</text>
+      <text>{{ datainfo[id].CarouselContent5 }}</text>
+    </view>
+    <view class="Carousel-Content-box">
+      <text>{{ datainfo[id].BoldParagraph6 }}</text>
+      <text>{{ datainfo[id].CarouselContent6 }}</text>
     </view>
     <view class="Carouseltime">
       <text>{{ getNowDay(this.formateDate) }}</text>
@@ -36,13 +49,15 @@ import { Component, Vue } from "vue-property-decorator";
   components: {},
 })
 export default class CarouselDetails extends Vue {
-  //存储数据
+  // 存储数据
   public datainfo: any = [];
   public id = 0;
-  public formateDate=""
 
-  //获取当前时间
-  getNowDay(val:any) {
+  // 格式化时间
+  public formateDate = "";
+
+  // 获取当前时间
+  getNowDay(val: any) {
     const date = new Date(val);
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
@@ -50,14 +65,20 @@ export default class CarouselDetails extends Vue {
     return `${year}-${month}-${day}`;
   }
 
-  //请求数据
+  // 请求日历内容数据
   async Myrequest() {
-    const res = await this.$myRequest({
-      url: "/MonsterCarouselinfo/CarouselDetails.php",
-    });
-    this.datainfo = res.data;
-    const time=this.datainfo[this.id].CarouselTime;
-    return this.formateDate=time;
+    try {
+      const res = await this.$myRequest({
+        url: "/MonsterCarouselinfo/CarouselDetails.php",
+        method: "GET",
+      });
+      this.datainfo = res.data;
+      console.log(this.datainfo);
+      const time = this.datainfo[this.id].CarouselTime;
+      return (this.formateDate = time);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   mounted() {
@@ -65,11 +86,11 @@ export default class CarouselDetails extends Vue {
   }
 
   onLoad(e: any) {
-    this.id=e.id-1
+    console.log(e);
+    this.id = e.id - 1;
   }
 }
 </script>
-
 <style lang="scss">
 @import "./index.scss";
 </style>

@@ -1,0 +1,106 @@
+// 页面颜色
+page {
+    background-color: rgb(231, 229, 229);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    margin-top: 100rpx;
+    .loginBox {
+        // 头像
+        width: 650rpx;
+        height: 900rpx;
+        background-color: white;
+        border-radius: 20px;
+        .avatar {
+            width: 150rpx;
+            height: 150rpx;
+            border-radius: 50%;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            position: relative;
+            top: -80rpx;
+            img {
+                width: 100rpx;
+                height: 100rpx;
+            }
+        }
+        .login-info {
+            // 表单内容
+            width: 500rpx;
+            margin: 0 auto;
+            text {
+                font-size: 45rpx;
+            }
+            .account {
+                margin-top: 30rpx
+            }
+            .password,
+            .account {
+                height: 100rpx;
+            }
+            .underscore {
+                height: 1px;
+                background: linear-gradient(#eee, rgb(237, 236, 236));
+            }
+            .submit {
+                height: 100rpx;
+                border-radius: 30px;
+                margin-top: 60rpx;
+                background-color: rgb(163, 161, 161);
+                line-height: 100rpx;
+                color: white;
+            }
+            .active {
+                // 不禁用登录颜色
+                background-color: burlywood;
+            }
+            // 单选按钮
+            .checkbox {
+                width: 500rpx;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 50rpx;
+                font-size: 32rpx;
+                checkbox {
+                    margin-top: 5rpx;
+                    transform: scale(0.7);
+                }
+                text {
+                    font-size: 32rpx;
+                    color: rgb(85, 85, 240);
+                }
+            }
+            // 第三方登录微信
+            .wxuser {
+                margin-top: 30rpx;
+                text-align: center;
+                text {
+                    font-size: 30rpx;
+                    color: rgb(152, 150, 150);
+                }
+                .imageBox {
+                    margin: 0 auto;
+                    width: 60rpx;
+                    height: 60rpx;
+                    background-color: rgb(250, 249, 249);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20rpx;
+                    border: 1px solid rgb(181, 180, 180);
+                }
+                img {
+                    width: 40rpx;
+                    height: 40rpx;
+                }
+            }
+        }
+    }
+}

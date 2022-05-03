@@ -11,7 +11,8 @@ export const myRequest=(options:any)=>{
             },
             fail:(err)=>{
                 uni.showToast({
-                    title:"接口请求错误"
+                    title:"接口请求错误",
+                    icon:"none"
                 })
                 reject(err)
             }
