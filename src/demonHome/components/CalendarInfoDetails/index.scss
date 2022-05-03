@@ -1,0 +1,110 @@
+.calendar-info-box {
+    width: 90%;
+    margin: 0 auto;
+    .calendar-caption {
+        margin-top: 20rpx;
+        text {
+            font-size: 72rpx;
+        }
+    }
+    .calendar-content {
+        margin-top: 40rpx;
+        text {
+            color: rgb(118, 116, 116);
+            font-size: 36rpx;
+        }
+    }
+    .related-literature {
+        margin-top: 50rpx;
+        text {
+            font-size: 36rpx;
+            font-weight: 600;
+        }
+    }
+    .calendar-subtitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50rpx;
+        &::before,
+        &::after {
+            content: "";
+            border: solid 0.5px #eee;
+            width: 50%;
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+        text {
+            font-size: 36rpx;
+            display: inline-block;
+            width: 400rpx;
+            text-align: center;
+        }
+    }
+    .calendar-author {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50rpx;
+        text {
+            color: rgb(155, 155, 155);
+        }
+    }
+    // 评论相关标签
+    .related-sticky-notes {
+        margin-top: 30rpx;
+        text {
+            background-color: rgba(211, 200, 151, 0.2);
+            border-radius: 10rpx;
+            padding: 12rpx;
+            position: relative;
+            left: -10px;
+            margin-left: 10px;
+        }
+    }
+    .separation-line {
+        margin-top: 80rpx;
+        border: 1px solid #eee;
+    }
+    .no-comment {
+        margin-top: 60rpx;
+        height: 550rpx;
+        text-align: center;
+        img {
+            width: 300rpx;
+            height: 300rpx;
+        }
+        text {
+            margin-top: 30rpx;
+            display: block;
+            color: rgb(188, 185, 185);
+        }
+    }
+    .calendar-comment {
+        display: flex;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        .input-comment {
+            padding-left: 20rpx;
+            height: 80rpx;
+            line-height: 80rpx;
+            border-radius: 10rpx;
+            background-color: #eee;
+            width: 70%;
+        }
+        .input-submit {
+            width: 15%;
+            margin-left: 20rpx;
+            height: 80rpx;
+            line-height: 80rpx;
+            text-align: center;
+            border-radius: 10%;
+            color: white;
+            background-color: rgb(148, 148, 148);
+        }
+    }
+}

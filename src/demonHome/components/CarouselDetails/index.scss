@@ -1,0 +1,51 @@
+.carousel-details-info {
+    width: 100%;
+    .Carousel-title {
+        height: 130rpx;
+        line-height: 130rpx;
+        margin-left: 10rpx;
+        text {
+            font-size: 50rpx;
+            font-weight: 500;
+        }
+    }
+    .Carousel-img {
+        height: 500rpx;
+        img {
+            height: 500rpx;
+            width: 100%;
+        }
+    }
+    .Carousel-subtitle {
+        height: 120rpx;
+        line-height: 165rpx;
+        text {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    // 内容字体样式
+    .Carousel-Content-box,
+    .Carouseltime {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40rpx;
+        position: relative;
+        left: 10rpx;
+        text {
+            font-size: 30rpx;
+            letter-spacing: 5rpx;
+        }
+        text:first-child {
+            font-weight: bold;
+        }
+    }
+    // 格式化时间样式 
+    .Carouseltime {
+        height: 100rpx;
+        text {
+            color: rgb(0, 0, 0);
+            opacity: 0.4;
+        }
+    }
+}

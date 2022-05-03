@@ -1,0 +1,45 @@
+.calendarInfoBox {
+    width: 90%;
+    margin: 0 auto;
+    .calendar {
+        margin-top: 55rpx;
+        height: 300rpx;
+        width: 100%;
+        //日历颜色
+        .datetimeBox {
+            color: rgb(164, 162, 162);
+            margin-top: 50rpx;
+        }
+        //日历内容
+        .CalendarContent {
+            display: flex;
+            margin-top: 30rpx;
+            height: 240rpx;
+            background-color: white;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: space-between;
+            .CalendarText {
+                margin-left: 30rpx;
+                width: 50%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                line-height: 60rpx;
+                color: rgb(164, 162, 162);
+                .CalendarTitle {
+                    color: black;
+                    font-size: 36rpx;
+                    position: relative;
+                }
+            }
+        }
+        .CalendarImg {
+            margin: 15rpx 30rpx 0 0;
+            img {
+                width: 155rpx;
+                height: 155rpx;
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+// 页面颜色
+page {
+    background-color: rgb(231, 229, 229);
+}
+
+// 纵向滚动高度
+.scrolly {
+    height: 100%;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 0rpx;
+    bottom: 0rpx;
+    display: none;
+    img {
+        width: 100rpx;
+        height: 100rpx;
+        opacity: 0.6;
+    }
+}
+
+.content-box {
+    position: relative;
+    top: -30rpx;
+    width: 100%;
+    .content {
+        width: 90%;
+        height: 220rpx;
+        background-color: white;
+        margin-top: 30rpx;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin-top: 50rpx;
+        .textbox {
+            padding-left: 30rpx;
+            margin-top: 6rpx;
+            text:first-child {
+                font-weight: 400;
+                font-size: 35rpx;
+            }
+            text:last-child {
+                width: 95%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                display: inline-block;
+                margin-top: 15rpx;
+                opacity: 0.5;
+                font-size: 30rpx;
+            }
+        }
+        .imgbox {
+            padding-right: 30rpx;
+            img {
+                width: 150rpx;
+                height: 150rpx;
+            }
+        }
+    }
+}
